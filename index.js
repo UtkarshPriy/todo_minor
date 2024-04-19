@@ -10,6 +10,10 @@ import path from 'path';
 const controllerI = new controller();
 
 const app = express();
+app.use(express.static(path.join('src', 'public')));
+// app.set("views",path.resolve('src','public'));
+
+
 app.use(urlencoded({extended: true}));
 app.use(express.json());
 app.get('/',controllerI.getHome);

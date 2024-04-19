@@ -1,0 +1,33 @@
+.row{
+    display: flex;
+    flex-wrap: nowrap;
+
+}
+.dropdown{
+    padding: 0%;
+    flex: 1; /* Grow to fill available space */
+    border: 2px solid rgb(7, 7, 7);
+
+
+}
+
+.col{
+    padding: 0%;
+    flex: 1; /* Grow to fill available space */
+    border: 2px solid rgb(7, 7, 7);
+
+}
+#txt{
+    /* background-color: blue; */
+    color:rgb(16, 15, 15);
+    width: 100%;
+    
+}
+h1{
+    color:rgb(38, 3, 93);
+    border: 2px solid rgb(7, 7, 7);
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 10vh; 
+}
