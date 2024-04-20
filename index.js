@@ -18,7 +18,7 @@ app.use(urlencoded({ extended: true }));
 app.use(urlencoded({extended: true}));
 app.use(express.json());
 app.get('/',controllerI.getHome);
-app.post('/add',controllerI.addtask);
+app.post('/add', controllerI.addTask);
 
 
 // console.log(path.resolve('src','views'));
