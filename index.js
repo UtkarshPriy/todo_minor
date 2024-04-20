@@ -17,6 +17,7 @@ app.use(express.static(path.join('src', 'public')));
 app.use(urlencoded({extended: true}));
 app.use(express.json());
 app.get('/',controllerI.getHome);
+app.post('/guess',);
 
 
 // console.log(path.resolve('src','views'));

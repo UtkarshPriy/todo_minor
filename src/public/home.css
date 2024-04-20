@@ -1,33 +1,83 @@
-.row{
+.row {
+    display: flex;
+    flex-wrap: nowrap;
+    height: 7vh;
+
+
+
+}
+
+.dropdown {
+    padding: 0%;
+    flex: 1;
+    /* Grow to fill available space */
+    border: 2px solid rgb(7, 7, 7);
+
+
+}
+
+.col {
+    padding: 0%;
+    flex: 1;
+    /* Grow to fill available space */
+    border: 2px solid rgb(7, 7, 7);
+
+}
+
+#desc {
+    /* background-color: blue; */
+    color: rgb(16, 15, 15);
+    width: 100%;
+
+}
+
+#btn {
+    display: flex;
+    justify-content: center;
+    /* Center horizontally */
+    align-items: center;
+    /* Center vertically */
+}
+
+h1 {
+    color: rgb(38, 3, 93);
+    border: 2px solid rgb(7, 7, 7);
+    display: flex;
+    justify-content: center;
+    /* Center horizontally */
+    align-items: center;
+    /* Center vertically */
+    height: 10vh;
+}
+
+#ul {
+    border: 2px solid rgb(7, 7, 7);
     display: flex;
     flex-wrap: nowrap;
 
+    height: 10vh;
+
+}
+
+#tododesc {
+    align-items: center;
+    justify-content: left;
+}
+
+#spn1 {
+    align-items: baseline;
+    justify-content: center;
+}
+
+#category {
+    justify-content: right;
+    /* Center horizontally */
+    align-items: center;
+    /* Center vertically */
+}
+#row{
+    padding: 5px;
 }
 .dropdown{
-    padding: 0%;
-    flex: 1; /* Grow to fill available space */
-    border: 2px solid rgb(7, 7, 7);
-
-
-}
-
-.col{
-    padding: 0%;
-    flex: 1; /* Grow to fill available space */
-    border: 2px solid rgb(7, 7, 7);
-
-}
-#txt{
-    /* background-color: blue; */
-    color:rgb(16, 15, 15);
-    width: 100%;
-    
-}
-h1{
-    color:rgb(38, 3, 93);
-    border: 2px solid rgb(7, 7, 7);
-    display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    height: 10vh; 
+    padding: 5px;
 }
