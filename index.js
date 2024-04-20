@@ -6,18 +6,19 @@ import express, { urlencoded } from "express";
 import controller from './src/controller/user.controller.js';
 import path from 'path';
 
-
+import db from './src/config/mongoose.js';
 const controllerI = new controller();
-
 const app = express();
 app.use(express.static(path.join('src', 'public')));
+app.use(urlencoded({ extended: true }));
+
 // app.set("views",path.resolve('src','public'));
 
 
 app.use(urlencoded({extended: true}));
 app.use(express.json());
 app.get('/',controllerI.getHome);
-app.post('/guess',);
+app.post('/add',controllerI.addtask);
 
 
 // console.log(path.resolve('src','views'));
