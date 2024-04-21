@@ -11,4 +11,4 @@ db.once('open',()=>{
     console.log('db connect!!')
 });
 
-export default db;
+export default db;                          

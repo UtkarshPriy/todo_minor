@@ -23,28 +23,28 @@
 
   <form id="form1" action="/add" method="post">
     <div>
-      <textarea name='desc' id='desc'>
-        Description
+      <textarea name='desc' id='desc' required placeholder="Description">
+        
       </textarea>
     </div>
 
     <div class="row" ,id='row'>
 
       <div class="dropdown">
-        <select name="categary" id="categary">
+        <select name="category" id="category" required>
           <option value="" disabled selected>Select Category</option>
 
-          <option name="categary" value="school">school</option>
-          <option name="categary" value="home">home</option>
-          <option name="categary" value="office">office</option>
-          <option name="categary" value="other">other</option>
+          <option name="category" value="school">school</option>
+          <option name="category" value="home">home</option>
+          <option name="category" value="office">office</option>
+          <option name="category" value="other">other</option>
         </select>
 
       </div>
 
       <div class="col">
         <a>Due date</a>
-        <input type="date" id="duedate" name="duedate">
+        <input type="date" id="duedate" name="duedate" required>
 
       </div>
     </div>
@@ -56,16 +56,16 @@
     <button id="removebtn" type="submit"> - DELETE TASK </button>
   </div>
 
-
-
   <div>
     <% todos.forEach(todo => { %>
+      
+
     <ul id="ul">
-      <input type="radio" id="<%= todo.name %>" name="radio" value="<%= todo.name %>">
+      <input type="radio" id="<%= todo.desc %>" name="radio" value="<%=todo.desc%>">
       <h3 id='tododesc'><%= todo.desc %></h3>
       <mark id='spn1'><%= todo.duedate %></mark>
       <div>
-        <h3 id='categary'><%= todo.category %></h3>
+        <h3 id='category'><%= todo.category %></h3>
 
       </div>
     </ul>

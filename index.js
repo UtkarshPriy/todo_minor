@@ -19,6 +19,7 @@ app.use(urlencoded({extended: true}));
 app.use(express.json());
 app.get('/',controllerI.getHome);
 app.post('/add', controllerI.addTask);
+app.post("/remove",controllerI.removeTask);
 
 
 // console.log(path.resolve('src','views'));
