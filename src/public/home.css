@@ -39,19 +39,23 @@
     /* Center vertically */
     padding: auto;
 }
-#addbtn{
+
+#addbtn {
     color: rgb(8, 97, 49);
 
 }
-#removebtn{
+
+#removebtn {
     color: brown;
 }
-#desc{
+
+#desc {
     background-color: antiquewhite;
     color: rgb(10, 10, 10);
 
 }
-#desc:hover{
+
+#desc:hover {
 
     background-color: burlywood;
 }
@@ -75,29 +79,34 @@ h1 {
     height: 10vh;
 
 }
-#tododesc{
+
+#tododesc {
     /* font-style:normal; */
-    font-size:x-large;
+    font-size: x-large;
     font-family: Arial, sans-serif
 }
 
-#ul,#spn1 {
+#ul,
+#spn1 {
     align-items: center;
     justify-content: left;
     color: rgb(79, 10, 10);
-    background-color:rgb(128, 131, 135);
+    background-color: rgb(128, 131, 135);
     text-size-adjust: auto;
-    
+
 }
-#ul:hover,#spn1:hover{
-    background-color: rgb(97, 87, 87);;
-    
+
+#ul:hover,
+#spn1:hover {
+    background-color: rgb(97, 87, 87);
+    ;
+
 }
 
 #spn1 {
     align-items: baseline;
     justify-content: center;
-    font-size:x-small;
+    font-size: x-small;
 }
 
 #category {
@@ -108,14 +117,16 @@ h1 {
     text-align: right;
     color: rgb(4, 5, 5);
     text-size-adjust: auto;
-    font-size:medium ;
+    font-size: medium;
 }
-#row{
+
+#row {
     padding: 5px;
     size-adjust: auto;
     line-height: 100%;
     height: auto;
 }
-.dropdown{
+
+.dropdown {
     padding: 5px;
 }

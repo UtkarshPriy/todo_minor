@@ -3,76 +3,82 @@
 
 <head>
   <meta charset="UTF-8">
+  <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
   </script>
+  <!-- Custom CSS -->
   <link href="/home.css" rel="stylesheet">
 
-
+  <!-- Viewport configuration for responsiveness -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>To-Do</title>
 </head>
 
 <body>
 
+  <!-- Main heading -->
   <h1>TODO APP</h1>
 
-
+  <!-- Form for adding tasks -->
   <form id="form1" action="/add" method="post">
     <div>
+      <!-- Textarea for task description -->
       <textarea name='desc' id='desc' placeholder="TASK DESCRIPTION" required></textarea>
     </div>
 
+    <!-- Row container for dropdown and date input -->
     <div class="row" id='row'>
-
+      <!-- Dropdown for selecting task category -->
       <div class="dropdown">
         <select name="category" id="category" required>
           <option value="" disabled selected>Select Category</option>
-
+          <!-- Options for task categories -->
           <option name="category" value="school">school</option>
           <option name="category" value="home">home</option>
           <option name="category" value="office">office</option>
           <option name="category" value="other">other</option>
         </select>
-
       </div>
 
+      <!-- Column for selecting due date -->
       <div class="col">
         <a>Due date</a>
         <input type="date" id="duedate" name="duedate" required>
-
       </div>
     </div>
-
   </form>
-  <!-- Added Buttons -->
+
+  <!-- Buttons for adding and deleting tasks -->
   <div id='btn'>
     <button id='addbtn' type="submit"> + ADD </button>
     <button id="removebtn" type="submit"> - DELETE TASK </button>
   </div>
- <!-- Dynamic rendering of HTML -->
+
+  <!-- Dynamic rendering of task list -->
   <div>
     <% todos.forEach(todo => { %>
-
-
     <ul id="ul">
+      <!-- Radio button for task selection -->
       <input type="radio" id="<%= todo.desc %>" name="radio" value="<%=todo.desc%>">
+      <!-- Task description -->
       <h3 id='tododesc'><%= todo.desc %></h3>
+      <!-- Mark for displaying due date -->
       <mark id='spn1'><%= todo.duedate.toDateString() %></mark>
+      <!-- Container for task category -->
       <div>
         <h3 id='category'><%= todo.category %></h3>
-
       </div>
     </ul>
     <% }); %>
   </div>
 
-
-
 </body>
-<script src='/btn.js'></script>
 
+<!-- Script for button functionality -->
+<script src='/btn.js'></script>
 
 </html>

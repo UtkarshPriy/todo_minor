@@ -19,14 +19,14 @@ export default class controller {
     }
 
     addTask = async (req, res) => {
-        
-        
+
+
         let newtask = {
             desc: req.body.desc.trim(),
             category: req.body.category,
             duedate: req.body.duedate
         };
-        
+
         try {
             await todolist.create(newtask);
         } catch (err) {
@@ -47,10 +47,10 @@ export default class controller {
         } catch (err) {
             console.error('error while deleting' + err);
         }
-        
+
         // res.redirect('/'); // Fetch just gets data, it doesn't navigate the browser 
         res.sendStatus(200);
-        
+
 
 
     }
