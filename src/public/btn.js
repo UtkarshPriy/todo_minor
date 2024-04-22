@@ -18,7 +18,6 @@ document.getElementById('removebtn').addEventListener('click', async () => {
                 })
 
             })
-            console.log(res);
             // window.location.href = "http://localhost:3001/";
         } else {
             alert('select for deleting!!');

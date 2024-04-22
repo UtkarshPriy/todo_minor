@@ -47,6 +47,8 @@ export default class controller {
         }
         console.log('test1');
         res.redirect('/');
+        console.log('test2');
+
 
     }
 }
