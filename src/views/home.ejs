@@ -8,7 +8,6 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
   </script>
-  <!-- <link rel="stylesheet" href="./public/home.css"> type="text/css" -->
   <link href="/home.css" rel="stylesheet">
 
 
@@ -23,12 +22,10 @@
 
   <form id="form1" action="/add" method="post">
     <div>
-      <textarea name='desc' id='desc' required placeholder="Description">
-        
-      </textarea>
+      <textarea name='desc' id='desc' placeholder="enter desc" required> </textarea>
     </div>
 
-    <div class="row" ,id='row'>
+    <div class="row" id='row'>
 
       <div class="dropdown">
         <select name="category" id="category" required>
@@ -50,15 +47,15 @@
     </div>
 
   </form>
-  <!-- Buttons -->
+  <!-- Added Buttons -->
   <div id='btn'>
     <button id='addbtn' type="submit"> + ADD </button>
     <button id="removebtn" type="submit"> - DELETE TASK </button>
   </div>
-
+ <!-- Dynamic rendering of HTML -->
   <div>
     <% todos.forEach(todo => { %>
-      
+
 
     <ul id="ul">
       <input type="radio" id="<%= todo.desc %>" name="radio" value="<%=todo.desc%>">

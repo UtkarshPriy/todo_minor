@@ -45,9 +45,10 @@ export default class controller {
         } catch (err) {
             console.error('error while deleting' + err);
         }
-        console.log('test1');
-        res.redirect('/');
-        console.log('test2');
+        
+        // res.redirect('/'); // Fetch just gets data, it doesn't navigate the browser 
+        res.send(200);
+        
 
 
     }
