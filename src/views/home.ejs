@@ -60,7 +60,7 @@
     <ul id="ul">
       <input type="radio" id="<%= todo.desc %>" name="radio" value="<%=todo.desc%>">
       <h3 id='tododesc'><%= todo.desc %></h3>
-      <mark id='spn1'><%= todo.duedate %></mark>
+      <mark id='spn1'><%= todo.duedate.toDateString() %></mark>
       <div>
         <h3 id='category'><%= todo.category %></h3>
 

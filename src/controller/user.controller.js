@@ -19,12 +19,14 @@ export default class controller {
     }
 
     addTask = async (req, res) => {
-
+        
+        console.log(fortmatDate.toDateString());
         let newtask = {
             desc: req.body.desc.trim(),
             category: req.body.category,
-            duedate: req.body.duedate,
+            duedate: req.body.duedate
         };
+        console.log(newtask);
         try {
             await todolist.create(newtask);
         } catch (err) {
@@ -47,7 +49,7 @@ export default class controller {
         }
         
         // res.redirect('/'); // Fetch just gets data, it doesn't navigate the browser 
-        res.send(200);
+        res.sendStatus(200);
         
 
 

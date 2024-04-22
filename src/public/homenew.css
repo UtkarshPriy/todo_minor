@@ -1,0 +1,74 @@
+/* Apply styles for mobile devices */
+@media only screen and (max-width: 600px) {
+    .row {
+      height: auto; /* Adjust height for smaller screens */
+    }
+  }
+  
+  /* Apply transitions for smoother effects */
+  .dropdown,
+  .col,
+  #desc {
+    transition: all 0.3s ease; /* Smooth transitions for all properties */
+  }
+  
+  /* Better color combinations and fonts */
+  body {
+    font-family: Arial, sans-serif; /* Choose a readable font */
+    background-color: #f8f9fa; /* Light background color */
+  }
+  
+  .dropdown,
+  .col {
+    border: 2px solid #343a40; /* Darker border color */
+    background-color: #fff; /* White background color */
+  }
+  
+  #desc {
+    background-color: #fff; /* White background color */
+    color: #343a40; /* Dark text color */
+  }
+  
+  #addbtn {
+    color: #198754; /* Green color for add button */
+  }
+  
+  #removebtn {
+    color: #dc3545; /* Red color for remove button */
+  }
+  
+  h1 {
+    color: #0d6efd; /* Primary blue color for headings */
+    border: 2px solid #343a40;
+    height: 80px; /* Adjust height for better visibility */
+    line-height: 80px; /* Center vertically */
+  }
+  
+  #ul,
+  #spn1 {
+    color: #333; /* Dark text color */
+    background-color: #e9ecef; /* Light background color */
+  }
+  
+  #ul:hover,
+  #spn1:hover {
+    background-color: #ced4da; /* Darker background color on hover */
+  }
+  
+  /* Apply transformations for better visual effects */
+  #tododesc {
+    font-style: italic; /* Use italic font style */
+    text-transform: capitalize; /* Capitalize the text */
+  }
+  
+  /* Additional styling for specific elements */
+  #category {
+    text-align: right; /* Align text to the right */
+  }
+  #row {
+    padding: 10px; /* Increase padding for better spacing */
+  }
+  .dropdown {
+    padding: 10px; /* Increase padding for better spacing */
+  }
+  
