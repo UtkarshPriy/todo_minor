@@ -20,13 +20,13 @@ export default class controller {
 
     addTask = async (req, res) => {
         
-        console.log(fortmatDate.toDateString());
+        
         let newtask = {
             desc: req.body.desc.trim(),
             category: req.body.category,
             duedate: req.body.duedate
         };
-        console.log(newtask);
+        
         try {
             await todolist.create(newtask);
         } catch (err) {

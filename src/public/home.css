@@ -37,6 +37,7 @@
     /* Center horizontally */
     align-items: center;
     /* Center vertically */
+    padding: auto;
 }
 #addbtn{
     color: rgb(8, 97, 49);
@@ -75,8 +76,9 @@ h1 {
 
 }
 #tododesc{
-    font-style:normal;
+    /* font-style:normal; */
     font-size:x-large;
+    font-family: Arial, sans-serif
 }
 
 #ul,#spn1 {
@@ -111,6 +113,8 @@ h1 {
 #row{
     padding: 5px;
     size-adjust: auto;
+    line-height: 100%;
+    height: auto;
 }
 .dropdown{
     padding: 5px;
